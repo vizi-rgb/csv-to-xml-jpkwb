@@ -1,11 +1,10 @@
-package pw.mssql.jpkwb.domain;
+package pw.mssql.jpkwb.domain.subject;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
-import lombok.experimental.ExtensionMethod;
+import pw.mssql.jpkwb.domain.heading.Heading;
 
 @Entity
 @AllArgsConstructor
@@ -16,6 +15,9 @@ public class Subject {
 
     @Id
     private Long id;
+
+    @Embedded
+    private Heading heading;
 
     @Embedded
     private SubjectDetails subjectDetails;
