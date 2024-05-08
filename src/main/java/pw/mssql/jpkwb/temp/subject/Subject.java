@@ -1,4 +1,4 @@
-package pw.mssql.jpkwb.domain.subject;
+package pw.mssql.jpkwb.temp.subject;
 
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
