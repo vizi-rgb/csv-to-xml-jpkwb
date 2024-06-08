@@ -1,4 +1,4 @@
-package pw.mssql.jpkwb.domain.balance;
+package pw.mssql.jpkwb.temp.heading;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
@@ -6,15 +6,13 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
 @Embeddable
-@Getter
 @Builder
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class BalanceChange {
+public class FormCode {
 
-    private BigDecimal openingBalance;
-    private BigDecimal closingBalance;
+    private String systemCode;
+    private String schemaVersion;
 }

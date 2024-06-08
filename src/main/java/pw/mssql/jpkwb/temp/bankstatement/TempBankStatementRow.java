@@ -1,4 +1,4 @@
-package pw.mssql.jpkwb.domain.bankstatement;
+package pw.mssql.jpkwb.temp.bankstatement;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,24 +9,21 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-
 @Entity
-@Getter
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class BankStatementRow {
+@NoArgsConstructor
+@Getter
+public class TempBankStatementRow {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Integer rowNumber;
-    private LocalDate operationDate;
+    private String rowNumber;
+    private String operationDate;
     private String subjectName;
     private String operationDescription;
-    private BigDecimal operationAmount;
-    private BigDecimal operationBalance;
+    private String operationAmount;
+    private String operationBalance;
 }

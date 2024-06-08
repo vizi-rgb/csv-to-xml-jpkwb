@@ -1,4 +1,4 @@
-package pw.mssql.jpkwb.domain.subject;
+package pw.mssql.jpkwb.temp.subject;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
@@ -7,8 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Embeddable
-@Getter
 @Builder
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 public class SubjectAddress {

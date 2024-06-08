@@ -1,4 +1,4 @@
-package pw.mssql.jpkwb.domain.subject;
+package pw.mssql.jpkwb.temp.subject;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Subject {
+public class TempSubject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

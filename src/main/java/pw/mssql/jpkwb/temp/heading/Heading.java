@@ -1,4 +1,4 @@
-package pw.mssql.jpkwb.domain.heading;
+package pw.mssql.jpkwb.temp.heading;
 
 
 import jakarta.persistence.Embeddable;
@@ -8,25 +8,21 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Currency;
-
 @Embeddable
-@Getter
 @Builder
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Heading {
 
     @Embedded
     private FormCode formCode;
-    private Short formVariant;
+    private String formVariant;
     private String submissionPurpose;
-    private LocalDateTime jpkCreationDate;
-    private LocalDate fromDate;
-    private LocalDate toDate;
-    private Currency currencyCode;
+    private String jpkCreationDate;
+    private String fromDate;
+    private String toDate;
+    private String currencyCode;
     private String officeCode;
 
 
