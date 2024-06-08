@@ -22,6 +22,6 @@ public class JpkwbApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        jpkWbService.saveTempJpkWb();
+        jpkWbService.processJpkWb();
     }
 }

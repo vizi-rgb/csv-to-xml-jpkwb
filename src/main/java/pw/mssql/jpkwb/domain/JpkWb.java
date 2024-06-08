@@ -22,7 +22,7 @@ public class JpkWb {
     @Embedded
     private Heading heading;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Subject subject;
 
     private String accountNumber;
